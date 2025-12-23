@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+.frosted-bg {
+  position: relative;
+}
+.frosted-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.03;
+  pointer-events: none;
+  background-image: url('https://grainy-gradients.vercel.app/noise.svg');
+}
